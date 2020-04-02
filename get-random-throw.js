@@ -1,36 +1,14 @@
-export default getRandomThrow;
+// Export file 
 
+// Allows random number to gernate and return rock, paper or scissors
+export default function getRandomThrow(){
+    let computerThrow = Math.ceil(Math.random() * 3); 
 
-// Establish User Choice Options and Default Check 
-
-function getRandomThrow() {
-
-let randomThrow = '';
-let userChoice = '';
-
-    if (rocksInput.checked){
-        userChoice = 'rock';
-    } else if {
-        userChoice = 'paper';
-    } else {
-        userChoice = 'scissors';
+    if (computerThrow === 1){
+        return 'rock';
+    } else if (computerThrow === 2) {
+        return 'paper';
+    } else if (computerThrow === 3) {
+        return 'scissors';
     }
-
-    if (Math.random() < 0.34){
-        randomThrow = 'scissors';
-    } else if (randomThrow <= 0.67) {
-        randomThrow = 'paper';
-    } else {
-        randomThrow = 'scissors';
-    }
-};
-
-// checkResult
-function checkResults(player, computer){
-    if (player === computer){
-        return true;
-    } else { 
-        return false; 
-    }
-}
-
+} 

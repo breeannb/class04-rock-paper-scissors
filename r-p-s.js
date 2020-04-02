@@ -1,4 +1,6 @@
 // Import from other js 
+import getRandomThrow from '../get-random-throw.js';
+import checkResults from '../get-random-throw.js';
 
 // Establish the DOM
 const playButton = document.getElementById('play-button');
@@ -24,3 +26,14 @@ playButton.addEventListener('click', () => {
 resetButton.addEventListener('click', () => {
 
 }); 
+
+
+
+// if (rocksInput.checked){
+//     userChoice = 'rock';
+// } else if (rocksInput) {
+//     userChoice = 'paper'; 
+// } else {
+//     userChoice = 'scissors';     
+// }
+// }
