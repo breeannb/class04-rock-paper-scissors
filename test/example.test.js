@@ -3,14 +3,14 @@
 
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+test('time to test a function', function(expect) {
     //Arrange
     // Set up your parameters and expectations
 
     //Act 
     // Call the function you're testing and set the result to a const
 
-    //Assert
+    //Expect
     // Make assertions about what is expected valid result
-    assert.equal(true, false);
+    expect.equal(true, false);
 });

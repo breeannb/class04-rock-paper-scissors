@@ -5,25 +5,11 @@ const playButton = document.getElementById('play-button');
 const resetButton = document.getElementById('reset-button');
 const radios = document.querySelectorAll('input');
 
+// Establishing the Const for the 'checked' in the DOM
 const rocksInput = radios[0];
 const paperInput = radios[1];
 const scissorsInput = radios[2];
 
-
-// function herd 
-
-let userChoice = '';
-let computerChoice = '';
-
-if (rocksInput.checked){
-    userChoice = 'rock';
-}
-else {
-    userChoice = 'paper';
-}
-else {
-    userChoice = 'scissors';
-}
 
 
 // Event Listeners 
