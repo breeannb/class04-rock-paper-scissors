@@ -11,8 +11,19 @@ section {
     padding: 2%;
     background-color: lavender;
     margin: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img { 
     width: 200px; 
 }
+
+
