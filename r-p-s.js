@@ -4,7 +4,7 @@ import checkResults from './check-results.js';
 
 // Establish the DOM
 const playButton = document.getElementById('play-button');
-// const resetButton = document.getElementById('reset-button');
+const resetButton = document.getElementById('reset-button');
 // const radios = document.querySelectorAll('input');
 const winsSpan = document.getElementById('wins-count');
 const lossesSpan = document.getElementById('losses-count');
@@ -38,20 +38,20 @@ playButton.addEventListener('click', () => {
     if (results === 'draw') { 
         drawsCount++; 
         updateMatchScores(); 
-        winsLosses.textContent = 'Its a draw! The computer chose: ${computerThrow}'; 
+        winsLosses.textContent = 'Its a draw! The computer chose: ' + computerThrow; 
         currentRoundResults.style.visibility = 'visible'; 
         
     }
     else if (results === 'win') { 
         winsCount++; 
         updateMatchScores(); 
-        winsLosses.textContent = 'Congratulations, you won! The computer chose: ${computerThrow}'; 
+        winsLosses.textContent = 'Congratulations, you won! The computer chose: ' + computerThrow; 
         currentRoundResults.style.visibility = 'visible'; 
     }
     else if (results === 'lose') { 
         lossesCount++; 
         updateMatchScores(); 
-        winsLosses.textContent = "I'm sorry, but you lost this round! The computer chose: ${computerThrow}"; 
+        winsLosses.textContent = "I'm sorry, but you lost this round! The computer chose: " + computerThrow; 
         currentRoundResults.style.visibility = 'visible'; 
     }
 });
@@ -59,16 +59,11 @@ playButton.addEventListener('click', () => {
 
 
 // // Reset Button 
-// resetButton.addEventListener('click', () => {
+resetButton.addEventListener('click', () => {
+    winsCount = 0; 
+    lossesCount = 0; 
+    drawsCount = 0; 
 
-// }); 
-
-
-
-//  if (rocksInput.checked){
-//     userChoice = 'rock';
-// } else if (rocksInput) {
-//     userChoice = 'paper'; 
-// } else {
-//     userChoice = 'scissors';     
-// }
+    updateMatchScores(); 
+    currentRoundResults.style.visibility = 'hidden'; 
+}); 
