@@ -43,3 +43,5 @@ test('testing all outcomes for rock, paper, scissors', function(expect) {
     expect.equal(throw9, 'draw');
 
 });
+
+export default checkResults; 
