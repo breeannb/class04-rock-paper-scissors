@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="r-p-s.css">
+    <title>Rock Paper Scissors</title>
+        <style>body {background-image: url(https://thumbs.gfycat.com/RegalAssuredGossamerwingedbutterfly-size_restricted.gif); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}</style>
+</head>
+
+<body>
+    <section> 
+        <h1>Rock, Paper, Scissors!</h1>
+        <p>Are you ready for a game of rock, paper, scissors? 
+            <br>
+            Remember: 
+            <ol>
+                <li>Paper beats rock,</li>
+                <li>Rock beats scissors</li>
+                <li>Scissors beats paper</li>
+                <li>Take your best shot and try to beat your rival.</li>
+            </ol>  
+        </p>
+
+    </section>
+        
+    <section class="throws" style="throws"> 
+        <p>Choose which one here:</p>
+        <label> 
+            Rock
+            <input name="throw" value="rock" type="radio"checked>
+            <img class="radio-image" style="image" src="https://lh3.googleusercontent.com/proxy/AlJElkYYiZwFvZyU5DESi3dHfSg9PIPUdNxQbFL8V9mbTNRqEDvqXVu8Bc5H-Ooidol8Gsalr-qmGDZaF8L1t6iMzeDN-kKPDGKAFmDwyfAcx3zB8VrN_Lc6QrT9bw0OvBLibPUUzKoWYc82jBFXv-SKvumXZcmf2Xg">
+        </label>
+        <label> 
+            Paper
+            <input name="throw" value="paper" type="radio">
+            <img class="radio-image" src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/paper--left.png">
+        </label>
+        <label> 
+            Scissors
+            <input name="throw" value="scissors" type="radio">
+            <img class="radio-image" src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/scissors--left.png">
+        </label>
+    </section>
+    
+
+    <div> 
+        <button id="play-button">Play Button</button>
+    </div>
+        
+    <section> 
+        <ul>
+            <li>Wins:<span id='wins-count'>Total of wins</span></li>
+            <li>Losses:<span id='losses-count'>Total of losses</span></li>
+            <li>Draws:<span id='draws-count'>Total of draws</span></li>
+        </ul>
+    </section>
+        
+    <section> 
+        <footer> 
+            <span id='result'>Display of Result of Each Game (what computer gave as an answer) and (win, loss, or draw)</span>
+        </footer>
+    </section>
+
+ 
+
+    <div> 
+        <button id="reset-button">Reset</button>
+    </div>
+
+    <script type="module" src="r-p-s.js"></script>
+</body>
+
+</html> 

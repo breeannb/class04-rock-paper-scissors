@@ -1,0 +1,29 @@
+* { 
+    align-items: center;
+}
+
+
+section { 
+    border: 4px solid;
+    border-color: lightblue;
+    width: 900px;
+    align-items: center;
+    padding: 2%;
+    background-color: lavender;
+    margin: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img { 
+    width: 200px; 
+}
+
+
